@@ -12,11 +12,11 @@ namespace PerfCounterCollector
         {
             string Processname = "notepad++";
             const string Buildnum = "333";
-            PerformanceLibrary.GetPerfCounters(Processname, @"C:\Temp11\", Buildnum, "tag", "tag", "start");
+            PerformanceLibrary.GetPerfCounters(Processname, @"C:\Temp\", Buildnum, "tag", "tag", "start");
 
             // Do some performance intensive action with notepad++ here - maybe open a huge file
 
-            PerformanceLibrary.GetPerfCounters(Processname, @"C:\Temp11\", Buildnum, "tag", "tag", "end");
+            PerformanceLibrary.GetPerfCounters(Processname, @"C:\Temp\", Buildnum, "tag", "tag", "end");
         }
     }
 }
